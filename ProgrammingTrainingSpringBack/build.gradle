@@ -1,0 +1,68 @@
+group 'ProgrammingTrainingSpringBack'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+//apply plugin: 'war'
+
+//sourceCompatibility = 1.5
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    //spring
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-tx', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-orm', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aop', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-oxm', version: '4.3.5.RELEASE'
+
+
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    compile group: 'jstl', name: 'jstl', version: '1.2'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.21'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+    compile group: 'taglibs', name: 'standard', version: '1.1.2'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+
+    compile group: 'org.springframework.security', name: 'spring-security-web', version: '4.1.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-config', version: '4.1.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '4.1.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-core', version: '4.1.3.RELEASE'
+
+    // persistence
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.10.6.RELEASE'
+
+    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.2.5.Final'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.5.Final'
+    compile group: 'org.hibernate', name: 'hibernate-validator', version: '5.3.4.Final'
+    compile "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final"
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-tx
+// https://mvnrepository.com/artifact/ma.glasnost.orika/orika-core
+    compile group: 'ma.glasnost.orika', name: 'orika-core', version: '1.5.0'
+
+
+
+// https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons-core
+    //compile group: 'org.springframework.data', name: 'spring-data-commons-core', version: '1.0.0.RELEASE'
+
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.10.6.RELEASE'
+
+    compile "com.google.code.gson:gson:2.7";
+
+    compile "org.apache.taglibs:taglibs-standard-jstlel:1.2.5";
+    compile "org.springframework:spring-context:4.3.2.RELEASE";
+    compile "org.springframework:spring-webmvc:4.3.2.RELEASE";
+
+    compile "ru.innopolis.course3:ProgrammingTrainingSpringCommon:0.0.1"
+    //compile "ru.innopolis.mvc:common:0.0.1"
+
+}
